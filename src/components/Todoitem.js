@@ -6,7 +6,8 @@ class TodoItem extends Component {
   getStyle = () => {
   return {
     padding: '10px',
-    borderBottom: '1px solid green',
+    // borderBottom: '1px solid green',
+    textAlign: "center",
     fontFamily: 'arial',
     textDecoration: this.props.todo.completed ? 'line-Through' : 'none'
   }
