@@ -1,22 +1,28 @@
 import React, { Component } from 'react';
 import Todos from './components/Todos.js';
+import TodoItem from './components/Todoitem.js';
 import './App.css'
 
 class App extends Component {
 
   state = {
-    todos: [{
-      todoText: "wash up"
+    todos: [
+    {
+      title: "wash up",
       completed: false
-    }]
+    },
+    {
+      title: "dinner",
+      completed: false
+      }
+    ]
   }
 
 
   render() {
     return (
       <div className="App">
-        <h1>App</h1>
-          <Todos />
+          <Todos todos={this.state.todos}/>
       </div>
     );
   }
