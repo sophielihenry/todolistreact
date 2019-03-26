@@ -7,8 +7,10 @@
   width: 222px;
   border-radius: 33px;
   outline: none;
-  border: 1px solid lightgrey;
-  padding-left: 40px;
+/*  border: 1px solid lightgrey;
+*/  padding-left: 40px;
+  text-align:center;
+  border:none;
 }
 
 .submitButton {
@@ -16,11 +18,14 @@
 }
 
 .todoItem {
-  border-bottom: 1px solid lightgrey;
-  font-size:13px;
+/*  border-bottom: 1px solid lightgrey;
+*/  font-size:13px;
   font-weight: lighter
 }
 
+.todoText {
+  text-align:left;
+}
 .container {
   width: 50%;
   display: flex;
