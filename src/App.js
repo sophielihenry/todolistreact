@@ -6,7 +6,6 @@ import Header from './components/Layout/Header.js';
 import AddTodo from './components/AddTodo.js';
 
 class App extends Component {
-
 // toggle a todo completed
   markCompleted = (id) => {
     this.setState({ todos: this.state.todos.map(todo => {
@@ -34,24 +33,21 @@ class App extends Component {
 }
 
   state = {
-    todos: [
-    {
-      id: Date.now(),
-      title: "wash up",
-      completed: false
-    },
-    ]
+    todos: []
   }
 
   render() {
     return (
-      <div className="App">
-          <Header />
-          <AddTodo addTodo = {this.addTodo} />
-          <Todos todos={this.state.todos}
-                 markCompleted={this.markCompleted}
-                 deleteItem={this.deleteItem}/>
-
+      <div className="container">
+        <div className="App">
+            <Header />
+            <div className="x">
+              <AddTodo addTodo = {this.addTodo} />
+              <Todos todos={this.state.todos}
+                     markCompleted={this.markCompleted}
+                     deleteItem={this.deleteItem}/>
+             </div>
+        </div>
       </div>
     );
   }

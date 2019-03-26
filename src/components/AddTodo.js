@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import '../App.css'
 
 export class AddTodo extends Component {
   state = {
@@ -17,24 +17,21 @@ export class AddTodo extends Component {
   render() {
     return (
   // remember to put input and button inside form div
-      <form onSubmit={this.onSubmit}>
+      <form onSubmit= {this.onSubmit} className="form">
         <input
           type="text"
           name="title"
           style={{ flex: '10', padding: '5px' }}
-          placeholder="Add Todo ..."
+          placeholder="add in a new todo"
           value={this.state.title}
           onChange={this.onChange}
+          className="addTodoInput"
+          autoComplete="off"
         />
-        <button type="submit">add</button>
+        <button type="submit" className="submitButton">add</button>
       </form>
     )
   }
-}
-
-// PropTypes
-AddTodo.propTypes = {
-  addTodo: PropTypes.func.isRequired
 }
 
 export default AddTodo

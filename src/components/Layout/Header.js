@@ -10,7 +10,9 @@ function Header() {
 
 const headerStyle = {
   fontFamily: "arial",
-  textAlign: "center"
+  textAlign: "center",
+  fontSize:"15px",
+
 }
 
 export default Header

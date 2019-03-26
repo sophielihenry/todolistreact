@@ -1,0 +1,36 @@
+.form {
+  text-align:center;
+}
+
+.addTodoInput {
+  height: 38px;
+  width: 222px;
+  border-radius: 33px;
+  outline: none;
+  border: 1px solid blanchedalmond;
+  padding-left: 40px;
+}
+
+.submitButton {
+  visibility: hidden;
+}
+
+.todoItem {
+/*  display: flex;
+  justify-content: center;*/
+  border-bottom: 1px solid bisque;
+}
+
+.container {
+  background-color: beige;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 31px;
+}
+
+.x {
+  display: flex;
+  flex-direction: column;
+}
