@@ -7,13 +7,14 @@ class TodoItem extends Component {
   return {
     padding: '10px',
     // borderBottom: '1px solid green',
-    textAlign: "center",
+    textAlign: "left",
     fontFamily: 'arial',
     display: "flex",
     justifyContent: "center",
     justifyContent: "space-between",
     // width: "142px",
-    textDecoration: this.props.todo.completed ? 'line-Through' : 'none'
+    textDecoration: this.props.todo.completed ? 'line-Through' : 'none',
+    color: this.props.todo.completed ? 'red' : 'black'
   }
 }
 
@@ -25,7 +26,8 @@ class TodoItem extends Component {
           <input type="checkbox"
                   onChange={this.props.markCompleted.bind(this, id)} />
             { title }
-            <button onClick={this.props.deleteItem.bind(this, id)}>x</button>
+            <button className="deleteButton"
+                    onClick={this.props.deleteItem.bind(this, id)}>x</button>
         </div>
       </div>
     )

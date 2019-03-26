@@ -3,16 +3,16 @@ import React from 'react'
 function Header() {
   return (
     <header style={headerStyle}>
-      <h1>Todo List</h1>
+      <h1 className="header">Todo List</h1>
     </header>
     )
 }
 
 const headerStyle = {
-  fontFamily: "arial",
+  fontFamily: "source sans pro",
   textAlign: "center",
   fontSize:"15px",
-
+  fontWeight:"normal"
 }
 
 export default Header
