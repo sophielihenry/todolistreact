@@ -7,6 +7,7 @@ import AddTodo from './components/AddTodo.js';
 
 class App extends Component {
 
+// toggle a todo completed
   markCompleted = (id) => {
     this.setState({ todos: this.state.todos.map(todo => {
       if (todo.id === id) {
@@ -16,15 +17,16 @@ class App extends Component {
       }) });
   }
 
+// delete a todo
   deleteItem = (id) => {
     this.setState({ todos: this.state.todos.filter(todo => todo.id !== id
       )})
-
   }
 
+// add a todo
   addTodo = (title) => {
     const newTodo = {
-      id: "3",
+      id: Date.now(),
       title: title,
       completed: false
     }
@@ -34,15 +36,10 @@ class App extends Component {
   state = {
     todos: [
     {
-      id: '1',
+      id: Date.now(),
       title: "wash up",
       completed: false
     },
-    {
-      id: '2',
-      title: "dinner",
-      completed: false
-      }
     ]
   }
 

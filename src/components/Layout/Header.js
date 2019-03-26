@@ -11,8 +11,6 @@ function Header() {
 const headerStyle = {
   fontFamily: "arial",
   textAlign: "center"
-
-
 }
 
 export default Header

@@ -12,10 +12,11 @@ export class AddTodo extends Component {
     this.setState({ title: '' });
   }
 
-  onChange = (e) => this.setState({ [e.target.name]: e.target.value });
+  onChange = (e) => this.setState({ title: e.target.value });
 
   render() {
     return (
+  // remember to put input and button inside form div
       <form onSubmit={this.onSubmit}>
         <input
           type="text"
@@ -25,11 +26,7 @@ export class AddTodo extends Component {
           value={this.state.title}
           onChange={this.onChange}
         />
-        <input
-          type="submit"
-          value="Submit"
-          className="btn"
-        />
+        <button type="submit">add</button>
       </form>
     )
   }
