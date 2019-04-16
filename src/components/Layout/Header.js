@@ -12,7 +12,6 @@ const headerStyle = {
   fontFamily: "source sans pro",
   textAlign: "center",
   fontSize:"15px",
-  fontWeight:"normal"
 }
 
 export default Header
