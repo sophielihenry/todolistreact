@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Todos from './components/Todos.js';
-import TodoItem from './components/Todoitem.js';
 import './App.css'
 import Header from './components/Layout/Header.js';
 import AddTodo from './components/AddTodo.js';

@@ -10,7 +10,6 @@ class TodoItem extends Component {
     textAlign: "left",
     fontFamily: 'arial',
     display: "flex",
-    justifyContent: "center",
     justifyContent: "space-between",
     // width: "142px",
     textDecoration: this.props.todo.completed ? 'line-Through' : 'none',
