@@ -1,26 +1,20 @@
-.form {
-/*  text-align:center;
-*/}
-
 .addTodoInput {
   height: 38px;
   width: 222px;
   border-radius: 33px;
   outline: none;
-/*  border: 1px solid lightgrey;
-*/  padding-left: 40px;
   text-align:center;
   border:none;
 }
 
-.submitButton {
-  visibility: hidden;
+.todoItem {
+  font-size:13px;
+  font-weight: lighter
 }
 
-.todoItem {
-/*  border-bottom: 1px solid lightgrey;
-*/  font-size:13px;
-  font-weight: lighter
+.App {
+  border: 1px solid lightgrey;
+  border-radius: 17px;
 }
 
 .todoText {
@@ -32,11 +26,6 @@
   justify-content: center;
   align-content: center;
   padding-bottom: 31px;
-}
-
-.x {
-  display: flex;
-  flex-direction: column;
 }
 
 .deleteButton {

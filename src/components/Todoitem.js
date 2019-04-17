@@ -6,12 +6,10 @@ class TodoItem extends Component {
   getStyle = () => {
   return {
     padding: '10px',
-    // borderBottom: '1px solid green',
     textAlign: "left",
     fontFamily: 'arial',
     display: "flex",
     justifyContent: "space-between",
-    // width: "142px",
     textDecoration: this.props.todo.completed ? 'line-Through' : 'none',
     color: this.props.todo.completed ? 'red' : 'black'
   }
@@ -25,9 +23,8 @@ class TodoItem extends Component {
           <input type="checkbox"
                   onChange={this.props.markCompleted.bind(this, id)} />
             <div className="todoText">
-            { title }
+              { title }
             </div>
-
             <button className="deleteButton"
                     onClick={this.props.deleteItem.bind(this, id)}>x</button>
         </div>
